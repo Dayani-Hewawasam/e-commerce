@@ -48,17 +48,31 @@ class _HomeState extends State<Home> {
               height: 30.0,
             ),
             Container(
-                padding: EdgeInsets.only(left: 20.0),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10)),
-                width: MediaQuery.of(context).size.width,
-                child: TextField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Search here",
-                      hintStyle: AppWidget.lightTextFeildStyle()),
-                ))
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(10)),
+              width: MediaQuery.of(context).size.width,
+              child: TextField(
+                decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: "Search here",
+                    hintStyle: AppWidget.lightTextFeildStyle(),
+                    prefixIcon: Icon(Icons.search, color: Colors.black)),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Categories", style: AppWidget.semiboldTextFeildStyle()),
+                Text("see all",
+                    style: TextStyle(
+                        color: Color(0xFFfd6f9e),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w500))
+              ],
+            )
           ],
         ),
       ),
