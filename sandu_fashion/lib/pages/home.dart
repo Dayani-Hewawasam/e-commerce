@@ -9,6 +9,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  List categories = [
+    "images/298-2.JPEG",
+    "images/303-maxi-1.JPEG",
+    "images/hero2.png",
+    "images/blackblouse-3.jpeg"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,19 +54,96 @@ class _HomeState extends State<Home> {
               height: 30.0,
             ),
             Container(
-                padding: EdgeInsets.only(left: 20.0),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10)),
-                width: MediaQuery.of(context).size.width,
-                child: TextField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Search here",
-                      hintStyle: AppWidget.lightTextFeildStyle()),
-                ))
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(10)),
+              width: MediaQuery.of(context).size.width,
+              child: TextField(
+                decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: "Search here",
+                    hintStyle: AppWidget.lightTextFeildStyle(),
+                    prefixIcon: Icon(Icons.search, color: Colors.black)),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Categories", style: AppWidget.semiboldTextFeildStyle()),
+                Text("see all",
+                    style: TextStyle(
+                        color: Color(0xFFfd6f9e),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w500))
+              ],
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 210.0,
+                  padding: EdgeInsets.all(23.0),
+                  margin: EdgeInsets.only(right: 10.0),
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 180, 135, 172),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                      child: Text("All",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold))),
+                ),
+                Expanded(
+                  child: Container(
+                    height: 210.0,
+                    child: ListView.builder(
+                        padding: EdgeInsets.zero,
+                        itemCount: categories.length,
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return CategoryTile(image: categories[index]);
+                        }),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CategoryTile extends StatelessWidget {
+  String image;
+  CategoryTile({required this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(3.0),
+      margin: EdgeInsets.only(right: 10.0),
+      decoration: BoxDecoration(
+          color: Colors.white, borderRadius: BorderRadius.circular(10)),
+      height: 180.0,
+      width: 100.0,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Image.asset(
+            image,
+            height: 180.0,
+            width: 100.0,
+            fit: BoxFit.cover,
+          ),
+          Icon(Icons.arrow_forward)
+        ],
       ),
     );
   }
