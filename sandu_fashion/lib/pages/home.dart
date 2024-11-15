@@ -112,7 +112,174 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("All Products", style: AppWidget.semiboldTextFeildStyle()),
+                Text("see all",
+                    style: TextStyle(
+                        color: Color(0xFFfd6f9e),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w500))
+              ],
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+                height: 300.0,
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(right: 20.0),
+                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "images/hero2.png",
+                            height: 200.0,
+                            width: 130.0,
+                            fit: BoxFit.cover,
+                          ),
+                          Text(
+                            "Blue hero frock",
+                            style: AppWidget.semiboldTextFeildStyle(),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "\$100",
+                                style: TextStyle(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    fontSize: 22.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 50.0,
+                              ),
+                              Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    borderRadius: BorderRadius.circular(7)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "images/hero2.png",
+                            height: 200.0,
+                            width: 130.0,
+                            fit: BoxFit.cover,
+                          ),
+                          Text(
+                            "Blue hero frock",
+                            style: AppWidget.semiboldTextFeildStyle(),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "\$100",
+                                style: TextStyle(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    fontSize: 22.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 50.0,
+                              ),
+                              Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    borderRadius: BorderRadius.circular(7)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "images/hero2.png",
+                            height: 200.0,
+                            width: 130.0,
+                            fit: BoxFit.cover,
+                          ),
+                          Text(
+                            "Blue hero frock",
+                            style: AppWidget.semiboldTextFeildStyle(),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "\$100",
+                                style: TextStyle(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    fontSize: 22.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                width: 50.0,
+                              ),
+                              Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    borderRadius: BorderRadius.circular(7)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ))
           ],
         ),
       ),
