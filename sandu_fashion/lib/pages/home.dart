@@ -131,6 +131,7 @@ class _HomeState extends State<Home> {
               height: 20.0,
             ),
             Container(
+
                 height: 300.0,
                 child: ListView(
                   shrinkWrap: true,
@@ -280,6 +281,7 @@ class _HomeState extends State<Home> {
                     )
                   ],
                 ))
+
           ],
         ),
       ),
@@ -297,7 +299,7 @@ class CategoryTile extends StatelessWidget {
       padding: EdgeInsets.all(3.0),
       margin: EdgeInsets.only(right: 10.0),
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(10)),
+          color: Colors.white, borderRadius: BorderRadius.circular(07)),
       height: 180.0,
       width: 100.0,
       child: Column(
