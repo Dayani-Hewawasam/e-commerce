@@ -112,6 +112,174 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("All Products", style: AppWidget.semiboldTextFeildStyle()),
+                Text("see all",
+                    style: TextStyle(
+                        color: Color(0xFFfd6f9e),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w500))
+              ],
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+              height: 240,
+              child: ListView(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/blackblouse-3.jpeg",
+                          height: 150,
+                          width: 150,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "Black Blouse",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "\$100",
+                              style: TextStyle(
+                                  color: Color(0xFFfd6f9e),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 40.0,
+                            ),
+                            Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color(0xFFfd6f9e),
+                                    borderRadius: BorderRadius.circular(07)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ))
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/298-2.JPEG",
+                          height: 150,
+                          width: 150,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "Frock",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "\$200",
+                              style: TextStyle(
+                                  color: Color(0xFFfd6f9e),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 40.0,
+                            ),
+                            Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color(0xFFfd6f9e),
+                                    borderRadius: BorderRadius.circular(07)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                )),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/290-3.jpeg",
+                          height: 150,
+                          width: 150,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "Red Frock",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "\$150",
+                              style: TextStyle(
+                                  color: Color(0xFFfd6f9e),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 40.0,
+                            ),
+                            Container(
+                                padding: EdgeInsets.all(5),
+                                decoration: BoxDecoration(
+                                    color: Color(0xFFfd6f9e),
+                                    borderRadius: BorderRadius.circular(07)),
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                )),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
@@ -130,7 +298,7 @@ class CategoryTile extends StatelessWidget {
       padding: EdgeInsets.all(3.0),
       margin: EdgeInsets.only(right: 10.0),
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(10)),
+          color: Colors.white, borderRadius: BorderRadius.circular(07)),
       height: 180.0,
       width: 100.0,
       child: Column(
