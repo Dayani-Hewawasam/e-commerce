@@ -30,7 +30,7 @@ class _ProductDetailState extends State<ProductDetail> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     border: Border.all(),
-                    borderRadius: BorderRadius.circular(30),
+                    borderRadius: BorderRadius.circular(50),
                   ),
                   child: Icon(Icons.arrow_back_ios_new_outlined),
                 ),

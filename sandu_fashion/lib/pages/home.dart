@@ -131,140 +131,141 @@ class _HomeState extends State<Home> {
               height: 20.0,
             ),
             Container(
-
-                height: 300.0,
-                child: ListView(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 20.0),
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/hero2.png",
-                            height: 200.0,
-                            width: 130.0,
-                            fit: BoxFit.cover,
-                          ),
-                          Text(
-                            "Blue hero frock",
-                            style: AppWidget.semiboldTextFeildStyle(),
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "\$100",
-                                style: TextStyle(
-                                    color: Color.fromARGB(250, 153, 25, 238),
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.bold),
+              height: 300.0,
+              child: ListView(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/298-2.JPEG",
+                          height: 250.0,
+                          width: 130.0,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "SF-298",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "\$100",
+                              style: TextStyle(
+                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 50.0,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  borderRadius: BorderRadius.circular(7)),
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.white,
                               ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
-                              Container(
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                    color: Color.fromARGB(250, 153, 25, 238),
-                                    borderRadius: BorderRadius.circular(7)),
-                                child: Icon(
-                                  Icons.add,
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
+                            )
+                          ],
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/hero2.png",
-                            height: 200.0,
-                            width: 130.0,
-                            fit: BoxFit.cover,
-                          ),
-                          Text(
-                            "Blue hero frock",
-                            style: AppWidget.semiboldTextFeildStyle(),
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "\$100",
-                                style: TextStyle(
-                                    color: Color.fromARGB(250, 153, 25, 238),
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.bold),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/303-maxi-1.JPEG",
+                          height: 250.0,
+                          width: 130.0,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "SF-303",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "\$100",
+                              style: TextStyle(
+                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 50.0,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  borderRadius: BorderRadius.circular(7)),
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.white,
                               ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
-                              Container(
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                    color: Color.fromARGB(250, 153, 25, 238),
-                                    borderRadius: BorderRadius.circular(7)),
-                                child: Icon(
-                                  Icons.add,
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
+                            )
+                          ],
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/hero2.png",
-                            height: 200.0,
-                            width: 130.0,
-                            fit: BoxFit.cover,
-                          ),
-                          Text(
-                            "Blue hero frock",
-                            style: AppWidget.semiboldTextFeildStyle(),
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "\$100",
-                                style: TextStyle(
-                                    color: Color.fromARGB(250, 153, 25, 238),
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                width: 50.0,
-                              ),
-                              Container(
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "images/290-3.JPEG",
+                          height: 250.0,
+                          width: 130.0,
+                          fit: BoxFit.cover,
+                        ),
+                        Text(
+                          "SF-290",
+                          style: AppWidget.semiboldTextFeildStyle(),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "\$100",
+                              style: TextStyle(
+                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 50.0,
+                            ),
+                            Container(
                                 padding: EdgeInsets.all(5),
                                 decoration: BoxDecoration(
                                     color: Color.fromARGB(250, 153, 25, 238),
@@ -272,16 +273,15 @@ class _HomeState extends State<Home> {
                                 child: Icon(
                                   Icons.add,
                                   color: Colors.white,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ))
-
+                                )),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
