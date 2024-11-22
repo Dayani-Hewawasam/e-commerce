@@ -4,7 +4,8 @@ plugins {
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
 }
-
+apply plugin: 'com.android.application'
+apply plugin:'com.google.gms.google-services'
 android {
     namespace = "com.example.sandu_fashion"
     compileSdk = flutter.compileSdkVersion
@@ -29,7 +30,11 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         minSdkVersion 23
+<<<<<<< HEAD
         targetSdkVersion 33
+=======
+        targetSdkVersion 30
+>>>>>>> 7e9e50ac6d7d628dc7364c4a424c66ed3f6e3a89
     }
 
     buildTypes {
@@ -43,4 +48,10 @@ android {
 
 flutter {
     source = "../.."
+}
+dependencies{
+    implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    
 }
