@@ -15,8 +15,8 @@ class _SignupState extends State<Signup> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin:
-              EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0, bottom: 40.0),
+          margin: const EdgeInsets.only(
+              top: 40.0, left: 20.0, right: 20.0, bottom: 40.0),
           child: Form(
             // key: _formkey,
             child: Column(
@@ -31,7 +31,7 @@ class _SignupState extends State<Signup> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Center(
@@ -40,20 +40,20 @@ class _SignupState extends State<Signup> {
                     style: AppWidget.lightTextFeildStyle(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40.0,
                 ),
                 Text(
                   "Name",
                   style: AppWidget.semiboldTextFeildStyle(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 240, 226, 238),
+                      color: const Color.fromARGB(255, 240, 226, 238),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     validator: (value) {
@@ -63,7 +63,7 @@ class _SignupState extends State<Signup> {
                       return null;
                     },
                     //  controller: emailcontroller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none, hintText: "Enter Your Name"),
                   ),
                 ),
@@ -71,13 +71,13 @@ class _SignupState extends State<Signup> {
                   "Email",
                   style: AppWidget.semiboldTextFeildStyle(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 240, 226, 238),
+                      color: const Color.fromARGB(255, 240, 226, 238),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     validator: (value) {
@@ -87,24 +87,24 @@ class _SignupState extends State<Signup> {
                       return null;
                     },
                     //  controller: emailcontroller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none, hintText: "Enter Your Email"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Text(
                   "Password",
                   style: AppWidget.semiboldTextFeildStyle(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 240, 226, 238),
+                      color: const Color.fromARGB(255, 240, 226, 238),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     validator: (value) {
@@ -114,15 +114,15 @@ class _SignupState extends State<Signup> {
                       return null;
                     },
                     //controller: passwordcontroller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none,
                         hintText: "Enter Your Password"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50.0,
                 ),
                 GestureDetector(
@@ -138,11 +138,11 @@ class _SignupState extends State<Signup> {
                   child: Center(
                     child: Container(
                       width: MediaQuery.of(context).size.width / 2,
-                      padding: EdgeInsets.all(18),
+                      padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Center(
+                      child: const Center(
                           child: Text("SIGNUP",
                               style: TextStyle(
                                   color: Colors.white,
@@ -151,7 +151,7 @@ class _SignupState extends State<Signup> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Row(
@@ -163,10 +163,12 @@ class _SignupState extends State<Signup> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Login()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Login()));
                       },
-                      child: Text(
+                      child: const Text(
                         "Login",
                         style: TextStyle(
                             color: Colors.green,

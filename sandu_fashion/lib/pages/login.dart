@@ -47,8 +47,8 @@ class _LoginState extends State<Login> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin:
-              EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0, bottom: 40.0),
+          margin: const EdgeInsets.only(
+              top: 40.0, left: 20.0, right: 20.0, bottom: 40.0),
           child: Form(
             // key: _formkey,
             child: Column(
@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Center(
@@ -72,20 +72,20 @@ class _LoginState extends State<Login> {
                     style: AppWidget.lightTextFeildStyle(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40.0,
                 ),
                 Text(
                   "Email",
                   style: AppWidget.semiboldTextFeildStyle(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 240, 226, 238),
+                      color: const Color.fromARGB(255, 240, 226, 238),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     validator: (value) {
@@ -95,24 +95,24 @@ class _LoginState extends State<Login> {
                       return null;
                     },
                     //  controller: emailcontroller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none, hintText: "Email"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Text(
                   "Password",
                   style: AppWidget.semiboldTextFeildStyle(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: const EdgeInsets.only(left: 20.0),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 240, 226, 238),
+                      color: const Color.fromARGB(255, 240, 226, 238),
                       borderRadius: BorderRadius.circular(20)),
                   child: TextFormField(
                     validator: (value) {
@@ -122,26 +122,26 @@ class _LoginState extends State<Login> {
                       return null;
                     },
                     //controller: passwordcontroller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none, hintText: "password"),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
                       "Forgot Password?",
                       style: TextStyle(
-                          color: const Color.fromARGB(255, 89, 19, 79),
+                          color: Color.fromARGB(255, 89, 19, 79),
                           fontSize: 18.0,
                           fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50.0,
                 ),
                 GestureDetector(
@@ -157,11 +157,11 @@ class _LoginState extends State<Login> {
                   child: Center(
                     child: Container(
                       width: MediaQuery.of(context).size.width / 2,
-                      padding: EdgeInsets.all(18),
+                      padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Center(
+                      child: const Center(
                           child: Text("LOGIN",
                               style: TextStyle(
                                   color: Colors.white,
@@ -170,7 +170,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Row(
@@ -182,10 +182,12 @@ class _LoginState extends State<Login> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Signup()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Signup()));
                       },
-                      child: Text(
+                      child: const Text(
                         "Sign Up",
                         style: TextStyle(
                             color: Colors.green,

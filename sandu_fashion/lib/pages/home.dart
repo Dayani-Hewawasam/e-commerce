@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 245, 230, 244),
       body: Container(
-        margin: EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
+        margin: const EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
                     ))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             Container(
@@ -62,36 +62,36 @@ class _HomeState extends State<Home> {
                     border: InputBorder.none,
                     hintText: "Search here",
                     hintStyle: AppWidget.lightTextFeildStyle(),
-                    prefixIcon: Icon(Icons.search, color: Colors.black)),
+                    prefixIcon: const Icon(Icons.search, color: Colors.black)),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Categories", style: AppWidget.semiboldTextFeildStyle()),
-                Text("see all",
+                const Text("see all",
                     style: TextStyle(
                         color: Color(0xFFfd6f9e),
                         fontSize: 20.0,
                         fontWeight: FontWeight.w500))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
               children: [
                 Container(
                   height: 210.0,
-                  padding: EdgeInsets.all(23.0),
-                  margin: EdgeInsets.only(right: 10.0),
+                  padding: const EdgeInsets.all(23.0),
+                  margin: const EdgeInsets.only(right: 10.0),
                   decoration: BoxDecoration(
                       color: const Color.fromARGB(255, 180, 135, 172),
                       borderRadius: BorderRadius.circular(10)),
-                  child: Center(
+                  child: const Center(
                       child: Text("All",
                           style: TextStyle(
                               color: Colors.white,
@@ -99,7 +99,7 @@ class _HomeState extends State<Home> {
                               fontWeight: FontWeight.bold))),
                 ),
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     height: 210.0,
                     child: ListView.builder(
                         padding: EdgeInsets.zero,
@@ -113,32 +113,32 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("All Products", style: AppWidget.semiboldTextFeildStyle()),
-                Text("see all",
+                const Text("see all",
                     style: TextStyle(
                         color: Color(0xFFfd6f9e),
                         fontSize: 20.0,
                         fontWeight: FontWeight.w500))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
-            Container(
+            SizedBox(
               height: 300.0,
               child: ListView(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 20.0),
-                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    margin: const EdgeInsets.only(right: 20.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
@@ -154,27 +154,28 @@ class _HomeState extends State<Home> {
                           "SF-298",
                           style: AppWidget.semiboldTextFeildStyle(),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10.0,
                         ),
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               "\$100",
                               style: TextStyle(
                                   color: Color.fromARGB(250, 153, 25, 238),
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 50.0,
                             ),
                             Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  color:
+                                      const Color.fromARGB(250, 153, 25, 238),
                                   borderRadius: BorderRadius.circular(7)),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -185,8 +186,8 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(right: 20.0),
-                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    margin: const EdgeInsets.only(right: 20.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
@@ -202,27 +203,28 @@ class _HomeState extends State<Home> {
                           "SF-303",
                           style: AppWidget.semiboldTextFeildStyle(),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10.0,
                         ),
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               "\$100",
                               style: TextStyle(
                                   color: Color.fromARGB(250, 153, 25, 238),
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 50.0,
                             ),
                             Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(250, 153, 25, 238),
+                                  color:
+                                      const Color.fromARGB(250, 153, 25, 238),
                                   borderRadius: BorderRadius.circular(7)),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                               ),
@@ -233,8 +235,8 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(right: 20.0),
-                    padding: EdgeInsets.symmetric(horizontal: 20.0),
+                    margin: const EdgeInsets.only(right: 20.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
@@ -250,27 +252,28 @@ class _HomeState extends State<Home> {
                           "SF-290",
                           style: AppWidget.semiboldTextFeildStyle(),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10.0,
                         ),
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               "\$100",
                               style: TextStyle(
                                   color: Color.fromARGB(250, 153, 25, 238),
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 50.0,
                             ),
                             Container(
-                                padding: EdgeInsets.all(5),
+                                padding: const EdgeInsets.all(5),
                                 decoration: BoxDecoration(
-                                    color: Color.fromARGB(250, 153, 25, 238),
+                                    color:
+                                        const Color.fromARGB(250, 153, 25, 238),
                                     borderRadius: BorderRadius.circular(7)),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.add,
                                   color: Colors.white,
                                 )),
@@ -291,13 +294,13 @@ class _HomeState extends State<Home> {
 
 class CategoryTile extends StatelessWidget {
   String image;
-  CategoryTile({required this.image});
+  CategoryTile({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(3.0),
-      margin: EdgeInsets.only(right: 10.0),
+      padding: const EdgeInsets.all(3.0),
+      margin: const EdgeInsets.only(right: 10.0),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(07)),
       height: 180.0,
@@ -311,7 +314,7 @@ class CategoryTile extends StatelessWidget {
             width: 100.0,
             fit: BoxFit.cover,
           ),
-          Icon(Icons.arrow_forward)
+          const Icon(Icons.arrow_forward)
         ],
       ),
     );
