@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sandu_fashion/Admin/add_product.dart';
 import 'package:sandu_fashion/Admin/admin_login.dart';
 import 'package:sandu_fashion/pages/bottomnav.dart';
 import 'package:sandu_fashion/pages/home.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: AdminLogin());
+        home: AddProduct());
   }
 }
 
