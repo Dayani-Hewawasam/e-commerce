@@ -32,7 +32,13 @@ class _AdminLoginState extends State<AdminLogin> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset('imagesSachiProfile.jpeg'),
+                Image.asset(
+                  'images/SachiProfile.jpeg',
+                  height: MediaQuery.of(context).size.height *
+                      0.3, // Adjust height as needed
+                  width: MediaQuery.of(context).size.width, // Full screen width
+                  fit: BoxFit.contain,
+                ),
                 Center(
                   child: Text(
                     " Admin Panel",

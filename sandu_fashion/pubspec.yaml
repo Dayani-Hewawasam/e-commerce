@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   curved_navigation_bar: ^1.0.6
-  cloud_firestore: ^5.5.0
+  cloud_firestore: ^5.6.0
   firebase_auth: ^5.3.3
   firebase_core: ^3.8.0   # Extra space before the caret
 
