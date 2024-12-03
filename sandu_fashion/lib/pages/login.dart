@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
                 Center(
                   child: Text(
                     "Sign in",
-                    style: AppWidget.semiboldTextFeildStyle(),
+                    style: AppWidget.semiBoldTextFeildStyle(),
                   ),
                 ),
                 const SizedBox(height: 20.0),
@@ -75,7 +75,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 const SizedBox(height: 40.0),
-                Text("Email", style: AppWidget.semiboldTextFeildStyle()),
+                Text("Email", style: AppWidget.semiBoldTextFeildStyle()),
                 const SizedBox(height: 20.0),
                 Container(
                   padding: const EdgeInsets.only(left: 20.0),
@@ -98,7 +98,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 const SizedBox(height: 20.0),
-                Text("Password", style: AppWidget.semiboldTextFeildStyle()),
+                Text("Password", style: AppWidget.semiBoldTextFeildStyle()),
                 const SizedBox(height: 20.0),
                 Container(
                   padding: const EdgeInsets.only(left: 20.0),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sandu_fashion/Admin/add_product.dart';
 import 'package:sandu_fashion/Admin/admin_login.dart';
 import 'package:sandu_fashion/pages/bottomnav.dart';
 import 'package:sandu_fashion/pages/home.dart';
@@ -8,19 +9,17 @@ import 'package:sandu_fashion/pages/product_detail.dart';
 import 'package:sandu_fashion/pages/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main()async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: FirebaseOptions(
-      apiKey: "AIzaSyDB9N8Wh-UxIvGvlB81M5ZLWTO4qUnZsMk",
-  authDomain: "sandu-fb981.firebaseapp.com",
-  projectId: "sandu-fb981",
-  storageBucket: "sandu-fb981.firebasestorage.app",
-  messagingSenderId: "1057235327985",
-  appId: "1:1057235327985:web:c007e1cb7792136c66c250",
-  measurementId: "G-MNY6L9T93E"
-    )
-  );
+      options: FirebaseOptions(
+          apiKey: "AIzaSyDB9N8Wh-UxIvGvlB81M5ZLWTO4qUnZsMk",
+          authDomain: "sandu-fb981.firebaseapp.com",
+          projectId: "sandu-fb981",
+          storageBucket: "sandu-fb981.firebasestorage.app",
+          messagingSenderId: "1057235327985",
+          appId: "1:1057235327985:web:c007e1cb7792136c66c250",
+          measurementId: "G-MNY6L9T93E"));
   runApp(const MyApp());
 }
 
@@ -52,7 +51,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: AdminLogin());
+        home: Home());
   }
 }
 
