@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057235327985",
+    "project_id": "sandu-fb981",
+    "storage_bucket": "sandu-fb981.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057235327985:android:903f8c1434c011f666c250",
+        "android_client_info": {
+          "package_name": "com.example.sandu_fashion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrvsA-b4DDbIQC9bgsgtn9A3bU2rvcKCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
