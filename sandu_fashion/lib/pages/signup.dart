@@ -96,7 +96,7 @@ class _SignupState extends State<Signup> {
                     child: Center(
                       child: Text(
                         "Sign Up",
-                        style: AppWidget.semiboldTextFeildStyle(),
+                        style: AppWidget.semiBoldTextFeildStyle(),
                       ),
                     ),
                   ),
@@ -114,7 +114,7 @@ class _SignupState extends State<Signup> {
                   ),
                   Text(
                     "Name",
-                    style: AppWidget.semiboldTextFeildStyle(),
+                    style: AppWidget.semiBoldTextFeildStyle(),
                   ),
                   SizedBox(
                     height: 20.0,
@@ -142,7 +142,7 @@ class _SignupState extends State<Signup> {
                   ),
                   Text(
                     "Email",
-                    style: AppWidget.semiboldTextFeildStyle(),
+                    style: AppWidget.semiBoldTextFeildStyle(),
                   ),
                   SizedBox(
                     height: 20.0,
@@ -173,7 +173,7 @@ class _SignupState extends State<Signup> {
                   ),
                   Text(
                     "Password",
-                    style: AppWidget.semiboldTextFeildStyle(),
+                    style: AppWidget.semiBoldTextFeildStyle(),
                   ),
                   SizedBox(
                     height: 20.0,

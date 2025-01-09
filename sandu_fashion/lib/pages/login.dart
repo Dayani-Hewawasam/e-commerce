@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sandu_fashion/pages/signup.dart';
 import 'package:sandu_fashion/widget/support_widget.dart';
-import 'package:sandu_fashion/pages/bottomnav.dart'; // Import the file where Bottomnav is defined
+import 'package:sandu_fashion/pages/home.dart'; // Import the Home page
 import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatefulWidget {
@@ -23,9 +23,10 @@ class _LoginState extends State<Login> {
         email: email,
         password: password,
       );
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Bottomnav()),
+        MaterialPageRoute(
+            builder: (context) => Home()), // Navigate to Home after login
       );
     } on FirebaseAuthException catch (e) {
       String errorMessage;
@@ -62,8 +63,8 @@ class _LoginState extends State<Login> {
                 Image.asset("images/hero2.png", width: 400.0),
                 Center(
                   child: Text(
-                    "Sign in",
-                    style: AppWidget.semiboldTextFeildStyle(),
+                    "Login",
+                    style: AppWidget.semiBoldTextFeildStyle(),
                   ),
                 ),
                 const SizedBox(height: 20.0),
@@ -75,7 +76,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 const SizedBox(height: 40.0),
-                Text("Email", style: AppWidget.semiboldTextFeildStyle()),
+                Text("Email", style: AppWidget.semiBoldTextFeildStyle()),
                 const SizedBox(height: 20.0),
                 Container(
                   padding: const EdgeInsets.only(left: 20.0),
@@ -98,7 +99,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 const SizedBox(height: 20.0),
-                Text("Password", style: AppWidget.semiboldTextFeildStyle()),
+                Text("Password", style: AppWidget.semiBoldTextFeildStyle()),
                 const SizedBox(height: 20.0),
                 Container(
                   padding: const EdgeInsets.only(left: 20.0),

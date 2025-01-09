@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppWidget {
-  static TextStyle BoldTextFeildStyle() {
-    return const TextStyle(
+
+  static TextStyle boldTextFeildStyle() {
+    return TextStyle(
+
+ 
+
         color: Colors.black, fontSize: 30.0, fontWeight: FontWeight.bold);
   }
 
@@ -11,8 +15,10 @@ class AppWidget {
         color: Colors.black54, fontSize: 20.0, fontWeight: FontWeight.w500);
   }
 
-  static TextStyle semiboldTextFeildStyle() {
-    return const TextStyle(
+
+  static TextStyle semiBoldTextFeildStyle() {
+    return TextStyle(
+
         color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold);
   }
 }
