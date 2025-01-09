@@ -12,9 +12,9 @@ class _ProductDetailState extends State<ProductDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFfef5f1),
+      backgroundColor: const Color(0xFFfef5f1),
       body: Container(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 50,
         ),
         child: Column(
@@ -26,13 +26,13 @@ class _ProductDetailState extends State<ProductDetail> {
                   Navigator.pop(context); // Go back when tapped
                 },
                 child: Container(
-                  margin: EdgeInsets.only(left: 10),
-                  padding: EdgeInsets.all(10),
+                  margin: const EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(50),
                   ),
-                  child: Icon(Icons.arrow_back_ios_new_outlined),
+                  child: const Icon(Icons.arrow_back_ios_new_outlined),
                 ),
               ),
               Center(
@@ -43,8 +43,9 @@ class _ProductDetailState extends State<ProductDetail> {
             ]),
             Expanded(
               child: Container(
-                padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
-                decoration: BoxDecoration(
+                padding:
+                    const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20),
@@ -60,32 +61,32 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: [
                         Text("blackBlouse",
                             style: AppWidget.BoldTextFeildStyle()),
-                        Text("\$300",
+                        const Text("\$300",
                             style: TextStyle(
                                 color: Color(0xFFfd6f9e),
                                 fontSize: 23.0,
                                 fontWeight: FontWeight.bold))
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Text("Details", style: AppWidget.semiboldTextFeildStyle()),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
-                    Text(
+                    const Text(
                         "Elegant black blouse with a chic, tailored fit. Perfect for both casual and formal occasions, featuring soft, breathable fabric and a sleek silhouette. A must-have versatile piece for any wardrobe!"),
-                    SizedBox(
+                    const SizedBox(
                       height: 90.0,
                     ),
                     Container(
-                      padding: EdgeInsets.symmetric(vertical: 10.0),
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
                       decoration: BoxDecoration(
-                          color: Color(0xFFfd6f9e),
+                          color: const Color(0xFFfd6f9e),
                           borderRadius: BorderRadius.circular(10.0)),
                       width: MediaQuery.of(context).size.width,
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Buy Now",
                         style: TextStyle(
