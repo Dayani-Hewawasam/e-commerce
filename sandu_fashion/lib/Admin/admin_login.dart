@@ -174,7 +174,7 @@ class _AdminLoginState extends State<AdminLogin> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
-                  'images/SachiProfile.jpeg',
+                  'images/dayani.jpeg',
                   height: MediaQuery.of(context).size.height *
                       0.3, // Adjust height as needed
                   width: MediaQuery.of(context).size.width, // Full screen width
