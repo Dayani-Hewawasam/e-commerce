@@ -8,6 +8,7 @@ class DatabaseMethods {
         .set(userInfoMap);
   }
 
+
   Future addProduct(
     Map<String, dynamic> userInfoMap,
   ) async {

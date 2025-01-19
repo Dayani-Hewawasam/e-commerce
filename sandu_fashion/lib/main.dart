@@ -20,7 +20,9 @@ void main() async {
           messagingSenderId: "1057235327985",
           appId: "1:1057235327985:web:c007e1cb7792136c66c250",
           measurementId: "G-MNY6L9T93E"));
+
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -51,7 +53,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: AdminLogin());
+        home: Signup());
   }
 }
 
