@@ -100,7 +100,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
                       // Display the fetched image
                       imageUrl.isNotEmpty
                           ? Image.network(
-                              imageUrl,
+                              imagePath,
                               height: 150,
                               width: 150,
                               fit: BoxFit.cover,
