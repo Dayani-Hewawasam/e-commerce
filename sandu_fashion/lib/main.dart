@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sandu_fashion/Admin/add_product.dart';
 import 'package:sandu_fashion/Admin/admin_login.dart';
+import 'package:sandu_fashion/Admin/home_admin.dart';
 import 'package:sandu_fashion/pages/bottomnav.dart';
 import 'package:sandu_fashion/pages/home.dart';
 import 'package:sandu_fashion/pages/login.dart';
@@ -22,7 +23,6 @@ void main() async {
           measurementId: "G-MNY6L9T93E"));
 
   runApp(const MyApp());
-
 }
 
 class MyApp extends StatelessWidget {
@@ -53,9 +53,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-
-        home: Signup());
-
+        home: Home());
   }
 }
 

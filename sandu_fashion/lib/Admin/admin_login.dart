@@ -139,9 +139,10 @@ class _AdminLoginState extends State<AdminLogin> {
 } */
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:sandu_fashion/Admin/add_product.dart';
-import 'package:sandu_fashion/Admin/add_product.dart'; // Import your ProductAddPage
+
 
 class AppWidget {
   static TextStyle semiBoldTextFeildStyle() {
@@ -174,7 +175,7 @@ class _AdminLoginState extends State<AdminLogin> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
-                  'images/SachiProfile.jpeg',
+                  'images/dayani.jpeg',
                   height: MediaQuery.of(context).size.height *
                       0.3, // Adjust height as needed
                   width: MediaQuery.of(context).size.width, // Full screen width
@@ -278,4 +279,5 @@ class _AdminLoginState extends State<AdminLogin> {
       });
     });
   }
-}
+} 
+

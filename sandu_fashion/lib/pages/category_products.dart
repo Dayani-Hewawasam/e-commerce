@@ -100,26 +100,26 @@ class _CategoryProductsState extends State<CategoryProducts> {
                       // Display the fetched image
                       imageUrl.isNotEmpty
                           ? Image.network(
-                              imageUrl,
+                              imagePath,
                               height: 150,
                               width: 150,
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
                                 return Image.network(
                                   'https://via.placeholder.com/150', // Placeholder image URL
-                                  height: 150,
-                                  width: 150,
+                                  height: 50,
+                                  width: 50,
                                   fit: BoxFit.cover,
                                 );
                               },
                             )
                           : Image.network(
                               'https://via.placeholder.com/150', // Placeholder image URL
-                              height: 150,
-                              width: 150,
+                              height: 50,
+                              width: 50,
                               fit: BoxFit.cover,
                             ),
-                      SizedBox(height: 20.0),
+                      SizedBox(height: 10.0),
                       Text(
                         ds["name"] ?? 'No Name',
                         style: TextStyle(

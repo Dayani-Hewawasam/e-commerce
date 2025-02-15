@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:sandu_fashion/pages/category_products.dart';
 import 'package:sandu_fashion/services/shared_pref.dart';
@@ -85,10 +83,8 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 30.0),
                   Container(
-
                     margin: const EdgeInsets.only(right: 20.0),
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
-
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
@@ -137,7 +133,6 @@ class _HomeState extends State<Home> {
                                 fontWeight: FontWeight.bold),
                           ),
                         ),
-
                       ),
                       Expanded(
                         child: SizedBox(
@@ -184,7 +179,6 @@ class _HomeState extends State<Home> {
                           name: categoryNames[index],
                         );
                       },
-
                     ),
                   )
                 ],
@@ -231,19 +225,15 @@ class CategoryTile extends StatelessWidget {
   }
 }
 
-
 class ProductTile extends StatelessWidget {
   final String image, name;
   const ProductTile({super.key, required this.image, required this.name});
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
-
       margin: const EdgeInsets.only(right: 20.0),
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(10)),
       child: Column(
@@ -254,12 +244,10 @@ class ProductTile extends StatelessWidget {
             width: 130.0,
             fit: BoxFit.cover,
           ),
-
           Text(
             name,
             style: AppWidget.semiBoldTextFeildStyle(),
           ),
-
         ],
       ),
     );
