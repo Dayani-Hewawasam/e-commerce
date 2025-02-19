@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 245, 230, 244),
+      backgroundColor: const Color(0xFFF3CCFF),
       body: name == null
           ? Center(child: CircularProgressIndicator())
           : Container(
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
                   Row(
                     children: [
                       Container(
-                        height: 210.0,
+                        height: 150.0,
                         padding: const EdgeInsets.all(23.0),
                         margin: const EdgeInsets.only(right: 10.0),
                         decoration: BoxDecoration(
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
                       ),
                       Expanded(
                         child: SizedBox(
-                          height: 210.0,
+                          height: 150.0,
                           child: ListView.builder(
                             padding: EdgeInsets.zero,
                             itemCount: categories.length,
