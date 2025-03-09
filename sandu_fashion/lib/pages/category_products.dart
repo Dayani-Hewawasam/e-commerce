@@ -91,7 +91,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
                   padding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: const Color.fromRGBO(243, 204, 255, 1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -101,8 +101,8 @@ class _CategoryProductsState extends State<CategoryProducts> {
                       imageUrl.isNotEmpty
                           ? Image.network(
                               imagePath,
-                              height: 150,
-                              width: 150,
+                              height: 270,
+                              width: 270,
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
                                 return Image.network(
@@ -135,7 +135,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
                           Text(
                             "\$${price}", // Display price as string
                             style: TextStyle(
-                              color: Color(0xFFfd6f3e),
+                              color: Color.fromARGB(255, 20, 13, 10),
                               fontSize: 18.0,
                               fontWeight: FontWeight.bold,
                             ),
