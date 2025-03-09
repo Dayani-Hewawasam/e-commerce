@@ -91,7 +91,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
                   padding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: const Color.fromRGBO(243, 204, 255, 1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -100,26 +100,26 @@ class _CategoryProductsState extends State<CategoryProducts> {
                       // Display the fetched image
                       imageUrl.isNotEmpty
                           ? Image.network(
-                              imageUrl,
-                              height: 150,
-                              width: 150,
+                              imagePath,
+                              height: 270,
+                              width: 270,
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
                                 return Image.network(
                                   'https://via.placeholder.com/150', // Placeholder image URL
-                                  height: 150,
-                                  width: 150,
+                                  height: 50,
+                                  width: 50,
                                   fit: BoxFit.cover,
                                 );
                               },
                             )
                           : Image.network(
                               'https://via.placeholder.com/150', // Placeholder image URL
-                              height: 150,
-                              width: 150,
+                              height: 50,
+                              width: 50,
                               fit: BoxFit.cover,
                             ),
-                      SizedBox(height: 20.0),
+                      SizedBox(height: 10.0),
                       Text(
                         ds["name"] ?? 'No Name',
                         style: TextStyle(
@@ -135,7 +135,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
                           Text(
                             "\$${price}", // Display price as string
                             style: TextStyle(
-                              color: Color(0xFFfd6f3e),
+                              color: Color.fromARGB(255, 20, 13, 10),
                               fontSize: 18.0,
                               fontWeight: FontWeight.bold,
                             ),
